@@ -1,6 +1,6 @@
 .login-container{
     height: 100vh;
-    background-image: url(../img/anh\ nua.jpg);
+    background-image: url(../img/bg1.jpg);
     background-size: cover;
     display: flex;
     justify-content: flex-end;
@@ -10,6 +10,8 @@
     height: 100vh;
     background-color: #ffffff;
     width: 30%;
+    animation: fadeIn 1.5s;
+    opacity: 0.8;
 }
 
 .login-container .aside-right .header h3{
@@ -29,4 +31,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@keyframes fadeIn {
+    from{ margin-top: -500px;
+        opacity: 0;
+
+    }
+    to{
+        margin-bottom: 0;
+        
+    }
 }
