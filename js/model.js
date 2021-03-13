@@ -32,14 +32,16 @@ model.login = async (dataLogin)=>{
                 const response = await firebase.auth()
                     .signInWithEmailAndPassword(dataLogin.email, dataLogin.password)
                 if (response.user.emailVerified === false) {
-                    alert("please Verified your email");
+                    alert("please verify your email");
                 }
                 else {
+                    console.log("logging in")
                     model.currentUser = {
                         displayName: response.user.displayName,
                         email: response.user.email,
                     }
-                    view.setAtiveScreen('homeScreen');// de day de chuan bi viet them
+                    console.log("...")
+                    view.setActiveScreen("homeScreen")
                 }
         
         

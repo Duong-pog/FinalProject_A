@@ -59,7 +59,13 @@ view.setActiveScreen = (screenName) => {
     // viết thêm phần này vào cho anh
     case "homeScreen":
       document.getElementById("app").innerHTML = components.homeScreen;
-      document.getElementById("welcome-user").innerText = 'Welcome to ' + model.currentUser.displayName;
+      document
+        .getElementById("logOutButton")
+        .addEventListener("click", () => {
+          console.log("clicked");
+          view.setActiveScreen("loginScreen");
+        });
       break;
   }
 };
+
