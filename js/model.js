@@ -36,6 +36,9 @@ model.login = async (dataLogin)=>{
                 }
                 else {
                     console.log("logging in")
+                    setTimeout(alert("Login successful"),1000)
+                    
+
                     model.currentUser = {
                         displayName: response.user.displayName,
                         email: response.user.email,

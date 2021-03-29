@@ -36,3 +36,9 @@
 .form-action span{
   font-size: 25px;
 }
+canvas{
+  border: 1px solid white
+}
+.test{
+  flex-direction: column;
+}

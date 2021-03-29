@@ -59,6 +59,7 @@ body::after{
     background-color: rgb(138, 81, 81,0);
     font-size: 40px; color: rgb(216, 0, 0); text-decoration: none;
     transition: 600ms;
+    border-radius: 10px;
 }
 .special:hover{
     color: white;
