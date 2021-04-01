@@ -25,7 +25,8 @@ const init = () => {
     if (user && user.emailVerified) {
       model.currentUser = {
         displayName: user.displayName,
-        email: user.email
+        email: user.email,
+        aname : user.aname
       };
       view.setActiveScreen('homeScreen');
     } else {
@@ -45,6 +46,10 @@ const init = () => {
   // });
   //   firebase.analytics();
   // view.setAtiveScreen('registerScreen;')
+
+
+
+
 
 };
 

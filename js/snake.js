@@ -91,6 +91,13 @@ function Snake(){
          for (i=index+1;i<snake.cells.length;i++){
              //va cham thi reset game
              if(cell.x === snake.cells[i].x && cell.y === snake.cells[i].y){
+                 if (score> model.currentUser.displayName){
+                    model.currentUser.displayName = score
+                    firebase.auth().currentUser.updateProfile ({
+                        displayName: score,
+                    });
+                 }
+                
                 snake.x = 160,
                 snake.y = 160,
 

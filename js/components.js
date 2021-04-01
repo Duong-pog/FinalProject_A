@@ -321,7 +321,7 @@ components.leaderBoard = `
           <div class="tabs">
             <ul>
               
-              <li class="active" data-li="month">Greatest players of all time</li>
+              <li class="active" data-li="month">Greatest scores of all time</li>
               
             </ul>
           </div>
@@ -332,7 +332,7 @@ components.leaderBoard = `
             <div class="lboard_mem">
               
               <div class="name_bar">
-                <p><span>1.</span> Alex Mike</p>
+                <p><span>1.</span> Dương</p>
                 <div class="bar_wrap">
                   <div class="inner_bar" style="width: 95%"></div>
                 </div>
@@ -346,7 +346,7 @@ components.leaderBoard = `
               <div class="name_bar">
                 <p><span>2.</span>Johnson</p>
                 <div class="bar_wrap">
-                  <div class="inner_bar" style="width: 80%"></div>
+                  <div class="inner_bar" ></div>
                 </div>
               </div>
               <div class="points">
@@ -358,7 +358,7 @@ components.leaderBoard = `
               <div class="name_bar">
                 <p><span>3.</span>Charles John</p>
                 <div class="bar_wrap">
-                  <div class="inner_bar" style="width: 70%;"></div>
+                  <div class="inner_bar" ></div>
                 </div>
               </div>
               <div class="points">
@@ -370,7 +370,7 @@ components.leaderBoard = `
               <div class="name_bar">
                 <p><span>4.</span>Scarlett Angela</p>
                 <div class="bar_wrap">
-                  <div class="inner_bar" style="width: 50%"></div>
+                  <div class="inner_bar" ></div>
                 </div>
               </div>
               <div class="points">
@@ -382,7 +382,7 @@ components.leaderBoard = `
               <div class="name_bar">
                 <p><span>5.</span>Rosey</p>
                 <div class="bar_wrap">
-                  <div class="inner_bar" style="width: 30%"></div>
+                  <div class="inner_bar" ></div>
                 </div>
               </div>
               <div class="points">

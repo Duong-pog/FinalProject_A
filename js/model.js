@@ -8,7 +8,8 @@ model.register = async (data)=>{
         .createUserWithEmailAndPassword(data.email, data.password);
         
         firebase.auth().currentUser.updateProfile ({
-            displayName: data.firstName +" "+ data.lastName
+            displayName: "0",
+            aname : data.firstName + " " + data.lastName
         });
 
 
@@ -40,6 +41,7 @@ model.login = async (dataLogin)=>{
                     
 
                     model.currentUser = {
+                        aname: response.user.aname,
                         displayName: response.user.displayName,
                         email: response.user.email,
                     }
