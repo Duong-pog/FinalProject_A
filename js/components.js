@@ -241,7 +241,8 @@ components.loginScreen = `
             border: 1px solid white
         }
     </style>
-    <p id="score" style="color: white; font-size: 30px;">Use arrrow keys to move</p>
+    <p id="score" style="color: white; font-size: 30px;">Use arrrow keys to move.</p>
+    <p id="highestscore" style="color: white; font-size: 30px;">Good luck!!!</p>
     <canvas width = "400" height = "400" id="game"></canvas>
     <button id = "return">Return</button>
   `  
@@ -346,7 +347,7 @@ components.leaderBoard = `
               <div class="name_bar">
                 <p><span>2.</span>Johnson</p>
                 <div class="bar_wrap">
-                  <div class="inner_bar" ></div>
+                  <div class="inner_bar" style="width: 85%"></div>
                 </div>
               </div>
               <div class="points">
@@ -358,7 +359,7 @@ components.leaderBoard = `
               <div class="name_bar">
                 <p><span>3.</span>Charles John</p>
                 <div class="bar_wrap">
-                  <div class="inner_bar" ></div>
+                  <div class="inner_bar" style="width: 75%"></div>
                 </div>
               </div>
               <div class="points">
@@ -370,7 +371,7 @@ components.leaderBoard = `
               <div class="name_bar">
                 <p><span>4.</span>Scarlett Angela</p>
                 <div class="bar_wrap">
-                  <div class="inner_bar" ></div>
+                  <div class="inner_bar" style="width: 65%"></div>
                 </div>
               </div>
               <div class="points">
@@ -382,7 +383,7 @@ components.leaderBoard = `
               <div class="name_bar">
                 <p><span>5.</span>Rosey</p>
                 <div class="bar_wrap">
-                  <div class="inner_bar" ></div>
+                  <div class="inner_bar" style="width: 55%"></div>
                 </div>
               </div>
               <div class="points">

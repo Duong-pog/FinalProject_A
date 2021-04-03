@@ -94,8 +94,10 @@ function Snake(){
                  if (score> model.currentUser.displayName){
                     model.currentUser.displayName = score
                     firebase.auth().currentUser.updateProfile ({
+
                         displayName: score,
                     });
+                    document.getElementById("highestscore").innerHTML = "Your highest score : " + model.currentUser.displayName
                  }
                 
                 snake.x = 160,
@@ -107,6 +109,7 @@ function Snake(){
                 snake.maxCells = 4
                 score = 0
                 document.getElementById("score").innerText = "Your Score : " + score
+                document.getElementById("highestscore").innerHTML = "Your highest score : " + model.currentUser.displayName
              }
          }
          //

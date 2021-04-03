@@ -8,8 +8,9 @@ model.register = async (data)=>{
         .createUserWithEmailAndPassword(data.email, data.password);
         
         firebase.auth().currentUser.updateProfile ({
+            aname : data.firstName + " " + data.lastName,
             displayName: "0",
-            aname : data.firstName + " " + data.lastName
+            
         });
 
 
@@ -36,15 +37,16 @@ model.login = async (dataLogin)=>{
                     alert("please verify your email");
                 }
                 else {
-                    console.log("logging in")
-                    setTimeout(alert("Login successful"),1000)
-                    
-
                     model.currentUser = {
                         aname: response.user.aname,
                         displayName: response.user.displayName,
                         email: response.user.email,
                     }
+                    console.log("logging in")
+                    setTimeout(alert("Login successful"),1000)
+                    
+
+                    
                     console.log("...")
                     view.setActiveScreen("homeScreen")
                 }
